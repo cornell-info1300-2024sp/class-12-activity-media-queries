@@ -1,0 +1,139 @@
+/*
+    Here are some code snippets for this activity.
+
+    Part 1 - basic media queries to for narrow
+    Part 2 - additions to cleanup, polish the narrow view
+*/
+
+/* ----------------------------------------------
+    Part 1 - basic media queries for narrow
+    - media query
+    - header
+    - nav menu
+    - stack content
+*/
+
+/* starter media query */
+@media (max-width: 700px) {
+    /* TODO: add narrow rules */
+}
+
+/* header */
+header {
+    flex-direction: column;
+}
+
+/* nav menu */
+nav ul {
+    flex-direction: column;
+}
+
+/* stack content */
+.content-container {
+    flex-direction: column;
+}
+
+/* ----------------------------------------------
+    Part 2 - cleanup, polish the narrow view
+    - media query
+    - header
+    - nav menu
+    - stack content
+*/
+
+/* header */
+header {
+    padding: 0;
+
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+}
+
+header h1 {
+    background-color: #cfcbbf;
+    padding: 18px;
+    font-size: 28pt;
+}
+
+/* nav menu */
+
+nav ul {
+    flex-direction: column;
+}
+
+nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 16px 8px 16px 12px;
+    border-left: 8px solid #efece5;
+}
+
+nav ul li a:hover {
+    background-color: #d0e3d9;
+    border-left: 8px solid #55bea9;
+    border-bottom: none;
+    padding-bottom: 16px;
+}
+
+/* stack content */
+
+.content-container {
+    flex-direction: column;
+    gap: 0;
+    padding-bottom: 8px;
+}
+
+/* text for events */
+.events-text {
+    order: 2;
+}
+
+/* ----------------------------------------------
+    Finished code
+*/
+
+@media (max-width: 700px) {
+    header {
+        padding: 0;
+
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+
+    header h1 {
+        background-color: #cfcbbf;
+        padding: 18px;
+        font-size: 28pt;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 16px 8px 16px 12px;
+        border-left: 8px solid #efece5;
+    }
+
+    nav ul li a:hover {
+        background-color: #d0e3d9;
+        border-left: 8px solid #55bea9;
+        border-bottom: none;
+        padding-bottom: 16px;
+    }
+
+    .content-container {
+        flex-direction: column;
+        gap: 0;
+        padding-bottom: 8px;
+    }
+
+    /* text for events */
+    .events-text {
+        order: 2;
+    }
+}
